@@ -21,7 +21,7 @@ DOLPHINSCHEDULER_HOME=${DOLPHINSCHEDULER_HOME:-$(cd $BIN_DIR/..; pwd)}
 
 source "$DOLPHINSCHEDULER_HOME/conf/dolphinscheduler_env.sh"
 
-export DOLPHINSCHEDULER_WORK_HOME=${DOLPHINSCHEDULER_HOME}
+export DOLPHINSCHEDULER_WORKER_HOME=${DOLPHINSCHEDULER_HOME}
 
 JAVA_OPTS=${JAVA_OPTS:-"-server -Duser.timezone=${SPRING_JACKSON_TIME_ZONE} -Xms4g -Xmx4g -Xmn2g -XX:+IgnoreUnrecognizedVMOptions -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=dump.hprof"}
 
